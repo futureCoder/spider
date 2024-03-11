@@ -47,7 +47,8 @@ class Spider(object):
             print(e)
 
     def main(self):
-        regions = ['xierqi1', 'qinghe11', 'xibeiwang']
+        # regions = ['xierqi1', 'qinghe11', 'xibeiwang']
+        regions = ['haidian', 'dongcheng', 'xicheng']
         page = [str(i) for i in range(1, 100)]
         items = [d for d in itertools.product(regions, page)]
         # 爬取100页的数据
